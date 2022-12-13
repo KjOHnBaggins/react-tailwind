@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --primary-dark: hsl(242, 74%, 61%);
+  --primary-light: hsl(221, 100%, 72%);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-[Verdana];
+  }
+  li {
+    @apply p-4 text-sm;
+  }
+  button {
+    @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
+  }
+  h2 {
+    @apply text-xl font-bold;
+  }
+}
